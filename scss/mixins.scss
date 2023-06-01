@@ -1,0 +1,130 @@
+// text mixins start
+
+@mixin p-big{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    letter-spacing: -0.25px;
+    
+}
+
+@mixin p-big-bold{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+}
+
+
+@mixin p-medium{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    
+}
+
+@mixin p-medium-bold{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    
+}
+
+@mixin p-small{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    
+}
+
+@mixin p-small-bold{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    
+}
+
+@mixin p-small-medium{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    
+}
+
+@mixin p-mobile{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    color: $color;
+}
+
+@mixin minicaps{
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+   
+}
+
+
+// buttons
+
+@mixin button-1($bg, $border, $border-radius, $color){
+    background: $bg;
+    color: $color;
+    border: $border;
+    border-radius: $border-radius;
+    padding: 8px 20px;
+    @include p-big-bold;
+    text-align: center;
+    transition: all 0.3s ease;
+
+        &:hover{
+            border: $border-gray-light;
+            color: $bg;
+            background: $color;
+        }
+        &:active{
+            border: $border-button-active;
+            border-color: $bg;
+        }
+}   
+
+@mixin menu-link($link, $hover, $active, $focus){
+    text-decoration: none;
+    color: $link;
+    transition: all 0.2s ease;
+
+    &:hover{
+        color: $hover;
+    }
+
+    &:active{
+        color: $active;
+    }
+
+    &:focus{
+        color: $focus;
+        @include p-medium-bold;
+    }
+
+}
+
+// hovers
+
+@mixin card-hover{
+    background-color: $color-white;
+    transition: all 0.2s ease-in;
+
+        &:hover{
+            filter: $filter-dark-shadow;
+            transform: scale(1.01);
+        }
+}
+
+

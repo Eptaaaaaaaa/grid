@@ -1,0 +1,73 @@
+// colors
+
+$color-white: #FFFFFF;
+$color-black: #2D3436;
+
+
+$color-gray-dark: #5C5C5C;
+$color-gray: #858585;
+$color-gray-light: #ADADAD;
+$color-gray-soft: #C2C2C2;
+
+
+$color-purple-dark: #6C5CE7;
+$color-purple-light: #A29BFE;
+
+
+$color-red-dark: #D63031;
+$color-red-light: #FF7675;
+
+
+$color-blue-dark: #0984E3;
+$color-blue-light: #74B9FF;
+
+
+$color-pink-dark: #E84393;
+$color-pink-light: #FD79A8;
+
+
+$color-green-dark: #00B894;
+$color-green-light: #55EFC4;
+
+
+$color-yellow-dark: #FDCB6E;
+$color-yellow-light: #FFEAA7;
+
+
+$gradient-black: linear-gradient(180deg, #2D3436 0%, rgba(45, 52, 54, 0) 100%);
+
+
+// borders
+
+$border-gray-light: 1px solid $color-gray-light;
+
+$border-gray: 1px solid $color-gray-light;
+
+$border-purple-dark: 1px solid #6C5CE7;
+
+$border-button-active: 5px solid;
+
+
+// shadows
+
+$dp-2: 0px 2px 4px rgba(38, 50, 56, 0.16), 0px 4px 8px rgba(38, 50, 56, 0.08);
+
+$dp-4: 0px 4px 6px rgba(38, 50, 56, 0.16), 0px 4px 16px rgba(38, 50, 56, 0.08);
+
+$ts-dark: 0px 4px 0px #000000;
+
+$ts-white: 0px 4px 0px #FFFFFF;
+
+// filters
+
+$filter-1: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px rgba(38, 50, 56, 0.08));
+
+$filter-dark-shadow: drop-shadow(0px 8px 8px rgba(38, 50, 56, 0.12)) drop-shadow(0px 16px 24px rgba(38, 50, 56, 0.08));
+
+// padding
+
+$block-padding: 60px 0;
+
+$input-padding: 8px 16px;
+
+$textarea-padding: 16px;

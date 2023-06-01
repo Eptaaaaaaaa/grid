@@ -1,0 +1,25 @@
+%marker-style {
+    position: absolute;
+    top: -12%;
+    left: 0;
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-image: url(../img/svg/list-marker.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+%form-styles {
+    opacity: 0.4;
+    border-radius: 16px;
+    background: $color-gray-soft;
+    border: 2px solid $color-gray-soft;
+    @include p-medium;
+    color: $color-black;
+        &:active, &:hover, &:focus{
+            border: 2px solid $color-purple-dark;
+        }
+}
